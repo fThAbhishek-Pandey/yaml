@@ -1,0 +1,37 @@
+#  reusing some properties anchor
+likeings: 
+  fav fruit: mango
+  dislike: grapes
+
+preson1: 
+ name: Abhishek Pandey
+ fav fruit: mango
+ dislike: grapes
+
+preson2: 
+ name: Mahadev Pandey
+ fav fruit: mango
+ dislike: grapes
+
+preson3: 
+ name: pagla Pandey
+ fav fruit: mango
+ dislike: grapes
+
+#  same as
+likeings: &likes
+  fav fruit: mango
+  dislike: grapes
+
+preson1: 
+ name: Abhishek Pandey
+ <<: *likes
+dislike: apple
+preson2: 
+ name: Mahadev Pandey
+ <<: *likes
+ dislike: banana
+ 
+preson3: 
+ name: pagla Pandey
+ <<: *likes
