@@ -1,0 +1,20 @@
+# donot have multiline commment
+# key value
+"apple": "I am a red frute"
+1: "this is abhishek roll number"
+---
+#  lists
+- mango
+- apple
+- apple
+--- # seperate the document
+#   blocks
+cities:
+- new delhi
+- mumbai
+- gujrat
+---
+cities: [new delhi , mumbai, gujrat]
+---
+{mango: "yello fruit", age:90}
+... # document ended

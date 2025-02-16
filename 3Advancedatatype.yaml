@@ -1,0 +1,68 @@
+# list
+student : !!seq
+- marks
+- rollno
+- name
+# like this also
+cities: [new delhi, mumbai]
+# some of the keys of seq will be empty
+#  sparse seq
+sparse seq: 
+- hey 
+- how
+- 
+- Null
+- sup
+#  nested sequences
+- 
+ - first name
+ - middle name
+ - last name
+- 
+ - mobile no
+ - roll no
+ - house no
+ - univercity no
+---
+# key: value pairs are called
+!!map 
+
+
+#  nested maaping : map within an map
+name: Abhishek
+role: 
+  age: 78
+  job: student
+
+# same as
+name: Abhishek Pandey
+role: {age: 78, job: student} 
+
+pair exaple: !!pair
+  - job: student
+  - job: teacher
+
+#  this will be an array of hashtable
+# same as
+pair example: !!pairs [job: student, job: teacher]
+
+
+#  !! set will allow you to hame unique value
+---
+name: !!set
+  ? Abhishek
+  ? pandey
+  ? JI
+---
+#disconary !!omap
+
+People: !!omap
+  - Abhishek: 
+      name: Abhishek Pandey
+      age: 78
+      height: 678
+  - dosti: 
+      name: mahadev pandey
+      age: .inf
+      height: .inf  
+
